@@ -21,12 +21,49 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
-    override fun onCreateItemSelected(item: MenuItem): Boolean {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.asistencia_docente -> {
                 Toast.makeText(this, "Asistencia Docente", Toast.LENGTH_SHORT).show()
                 return true
             }
+            R.id.becas -> {
+                Toast.makeText(this, "Becas", Toast.LENGTH_SHORT).show()
+                return true
+            }
+            R.id.calendario_academico -> {
+                Toast.makeText(this, "Calendario Academico", Toast.LENGTH_SHORT).show()
+                return true
+            }
+            R.id.cursos -> {
+                Toast.makeText(this, "Cursos", Toast.LENGTH_SHORT).show()
+                return true
+            }
+            R.id.estado_academico -> {
+                Toast.makeText(this, "Estado Academico", Toast.LENGTH_SHORT).show()
+                return true
+            }
+            R.id.formularios -> {
+                Toast.makeText(this, "Formularios", Toast.LENGTH_SHORT).show()
+                return true
+            }
+            R.id.login -> {
+                Toast.makeText(this, "Login", Toast.LENGTH_SHORT).show()
+                return true
+            }
+            R.id.ofertas_academicas -> {
+                Toast.makeText(this, "Ofertas Academicas", Toast.LENGTH_SHORT).show()
+                return true
+            }
+            R.id.pasantia_ofertas_laborales -> {
+                Toast.makeText(this, "Pasantias y Ofertas Laborales", Toast.LENGTH_SHORT).show()
+                return true
+            }
+            R.id.reglamento_de_estudios -> {
+                Toast.makeText(this, "Reglamento de Estudios", Toast.LENGTH_SHORT).show()
+                return true
+            }
+            else -> return super.onOptionsItemSelected(item)
         }
     }
 }
