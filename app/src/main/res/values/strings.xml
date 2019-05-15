@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SBU-UTN FRP</string>
+    <string name="asistencia_docente">Asistencia Docente</string>
+    <string name="becas">Becas</string>
+    <string name="calendario_academico">Calendario Academico</string>
+    <string name="cursos">Cursos</string>
+    <string name="estado_academico">Estado Academico</string>
+    <string name="formularios">Formularios</string>
+    <string name="login">Login</string>
+    <string name="ofertas_academicas">Ofertas Academicas</string>
+    <string name="pasantia_ofertas_laborales">Pasantias y Ofertas Laborales</string>
+    <string name="reglamento_de_estudio">Reglamento de Estudios</string>
+</resources>

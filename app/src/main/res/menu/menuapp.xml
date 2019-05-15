@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/asistencia_docente" android:id="@+id/asistencia_docente"/>
+    <item android:title="@string/becas" android:id="@+id/becas"/>
+    <item android:title="@string/calendario_academico" android:id="@+id/calendario_academico"/>
+    <item android:title="@string/cursos" android:id="@+id/cursos"/>
+    <item android:title="@string/estado_academico" android:id="@+id/estado_academico"/>
+    <item android:id="@+id/formularios" android:title="@string/formularios"/>
+    <item android:title="@string/login" android:id="@+id/login"/>
+    <item android:title="@string/ofertas_academicas" android:id="@+id/ofertas_academicas"/>
+    <item android:title="@string/pasantia_ofertas_laborales" android:id="@+id/pasantia_ofertas_laborales"/>
+    <item android:title="@string/reglamento_de_estudio" android:id="@+id/reglamento_de_estudios"/>
+</menu>
