@@ -4,16 +4,43 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.reflect.Modifier
 
 class MainActivity : AppCompatActivity() {
+
+    private val urlInicio: String = "http://www.frp.utn.edu.ar/info2/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        webview_Noticias.settings.javaScriptEnabled = true
 
+        webview_Noticias.webViewClient = object : WebViewClient(){
+            override fun onPageFinished(view: WebView?, url: String?) {
+                webview_Noticias.loadUrl("javascript:(function(){" +
+                    "document.getElementsByClassName('td_uid_4_5cdcc451cbd3f')[0].style.display = none; " +
+                        "})()")
+                //super.onPageFinished(view, url)
+            }
+        }
+        webview_Noticias.loadUrl(urlInicio)
+        
+
+    }
+
+    override fun onBackPressed() {
+        if(webview_Noticias.canGoBack()){
+            webview_Noticias.goBack()
+        }
+        else
+        {
+            super.onBackPressed()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
